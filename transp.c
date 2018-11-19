@@ -73,13 +73,13 @@ int main(int argc, char** argv) {
 		matrix[i] = randNum;
 	}
 
-	/*printf("Untransposed:\n");
+	printf("Untransposed:\n");
 	for (int i = 0; i < matrixWidth; i++) {
 		for (int j = 0; j < matrixWidth; j++) {
 			printf("%.1f ", matrix[i*matrixWidth + j]);
 		}
 		printf("\n");
-	}*/
+	}
 
 	struct timeval t1;
 	gettimeofday(&t1, NULL);
@@ -104,11 +104,11 @@ int main(int argc, char** argv) {
 	time_t diff = ((t1.tv_sec * 1000000)+t1.tv_usec - (t2.tv_sec*1000000)+t2.tv_usec);
 	printf("\ndiff: %06ld useconds\n", diff);
 
-	/*printf("\nTransposed:\n");
+	printf("\nTransposed:\n");
 	for (int row = 0; row < matrixWidth; row++) {
 		for (int col = 0; col < matrixWidth; col++) {
 			printf("%.1f ", transposedMatrix[row*matrixWidth + col]);
 		}
 		printf("\n");
-	}*/
+	}
 }
